@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+        <setting name="autoMappingBehavior" value="FULL"/>
+    </settings>
+    <typeAliases>
+        <package name="com.example.finaltest"/>
+        <package name="com.example.finaltest.typehandler"/>
+    </typeAliases>
+    <typeHandlers>
+        <package name="com.example.finaltest.typehandler"/>
+<!--        <typeHandler handler="com.example.finaltest.typehandler.MySqlJsonHandler"/>-->
+    </typeHandlers>
+</configuration>
